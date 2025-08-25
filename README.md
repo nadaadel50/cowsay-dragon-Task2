@@ -47,6 +47,48 @@ Edit
 ├── dragon.txt             # Generated output
 └── README.md              # Documentation
 
+
+🚀 Self-Hosted Runner Guide
+
+This project uses a GitHub Actions Self-Hosted Runner.
+
+▶️ Start the Runner
+# If installed as a service
+sudo systemctl start actions.runner.<org>-<repo>.<runner-name>.service
+
+# If running manually
+./run.sh
+
+⏹ Stop the Runner
+# If installed as a service
+sudo systemctl stop actions.runner.<org>-<repo>.<runner-name>.service
+
+# If running manually
+Ctrl + C
+
+📊 Check Runner Status
+# If installed as a service
+sudo systemctl status actions.runner.<org>-<repo>.<runner-name>.service
+
+
+Or in GitHub:
+
+Go to Repo → Settings → Actions → Runners
+
+You’ll see whether the runner is Idle (ready) or Offline (stopped).
+
+🔄 Re-run a Job
+
+Go to GitHub → Actions → Failed Workflow → Rerun Jobs.
+
+Or use CLI:
+
+gh run rerun <run-id>
+
+
+(Requires GitHub CLI
+)
+
 🐲 Example Output
 After running the workflow, you’ll see something like this in dragon.txt:
 
