@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  dragon-job:
+  dragon-job-1:
     runs-on: self-hosted
     steps:
       - name: Checkout repository
