@@ -70,7 +70,6 @@ Ctrl + C
 # If installed as a service
 sudo systemctl status actions.runner.<org>-<repo>.<runner-name>.service
 
-
 Or in GitHub:
 
 Go to Repo → Settings → Actions → Runners
@@ -86,8 +85,6 @@ Or use CLI:
 gh run rerun <run-id>
 
 
-(Requires GitHub CLI
-)
 
 🐲 Example Output
 After running the workflow, you’ll see something like this in dragon.txt:
